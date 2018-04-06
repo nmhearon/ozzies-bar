@@ -1,0 +1,16 @@
+.container{
+	max-width: 960px;
+}
+.site{
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 80px repeat(3, 300px) 600px 80px;
+	grid-template-areas:
+	"nav nav nav"
+	" sec1 sec1"
+	"sec2 sec2 img2"
+	"img3 sec3 sec3"
+	"advforyou advforothers advgeneral"
+	"foot foot foot";
+}

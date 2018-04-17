@@ -6,22 +6,29 @@
 }
 .site{
 	display: grid;
-	grid-gap: 5px;
+	// grid-gap: 5px;
 	// grid-template-columns: 1fr 1fr 1fr;
 	// grid-template-rows: 80px repeat(3, 300px) 600px 80px;
 
 	grid-template-areas:
-	"navigation navigation navigation"
+	"head head head"
+	"nav nav nav"
 	"sec1 sec1 sec1"
 	"sec2 sec2 sec2"
 	"sec3 sec3 sec3"
 	"foot foot foot";
 
 }
+.header{
+	grid-area: head;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+}
 .navigation{
 	// grid-column: 1 / 4;
+	grid-area: nav;
 	justify-content: stretch;
-	margin: auto;
 	ul{
 		text-align: center;
 		li{

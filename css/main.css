@@ -526,6 +526,13 @@ h1, h2, h3, body {
   color: white;
 }
 
+header {
+  background: white;
+}
+header img {
+  max-width: 30%;
+}
+
 .navigation ul {
   background: #292929;
   font-size: 1em;
@@ -533,6 +540,11 @@ h1, h2, h3, body {
 .navigation ul li a {
   color: white;
   font-family: Arial;
+}
+
+#currentpage li {
+  background: white;
+  text: #292929;
 }
 
 /*
@@ -707,13 +719,19 @@ h1, h2, h3, body {
 
 .site {
   display: grid;
-  grid-gap: 5px;
-  grid-template-areas: "navigation navigation navigation" "sec1 sec1 sec1" "sec2 sec2 sec2" "sec3 sec3 sec3" "foot foot foot";
+  grid-template-areas: "head head head" "nav nav nav" "sec1 sec1 sec1" "sec2 sec2 sec2" "sec3 sec3 sec3" "foot foot foot";
+}
+
+.header {
+  grid-area: head;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
 }
 
 .navigation {
+  grid-area: nav;
   justify-content: stretch;
-  margin: auto;
 }
 .navigation ul {
   text-align: center;

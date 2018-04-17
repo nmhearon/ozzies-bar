@@ -518,32 +518,21 @@ textarea {
   padding: 0.2em 0;
 }
 
-.hexagon {
-  position: relative;
-  width: 300px;
-  height: 173.21px;
-  background-color: #ffffff;
-  margin: 86.60px 0;
+html {
+  background: #8a0000;
 }
 
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
+h1, h2, h3, body {
+  color: white;
 }
 
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 86.60px solid #ffffff;
+.navigation ul {
+  background: #292929;
+  font-size: 1em;
 }
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 86.60px solid #ffffff;
+.navigation ul li a {
+  color: white;
+  font-family: Arial;
 }
 
 /*
@@ -710,13 +699,50 @@ textarea {
   }
 }
 .container {
-  max-width: 960px;
+  max-width: 1280px;
+  outline: none;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .site {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 80px repeat(3, 300px) 600px 80px;
-  grid-template-areas: "nav nav nav" " sec1 sec1" "sec2 sec2 img2" "img3 sec3 sec3" "advforyou advforothers advgeneral" "foot foot foot";
+  grid-template-areas: "navigation navigation navigation" "sec1 sec1 sec1" "sec2 sec2 sec2" "sec3 sec3 sec3" "foot foot foot";
+}
+
+.navigation {
+  justify-content: stretch;
+  margin: auto;
+}
+.navigation ul {
+  text-align: center;
+}
+.navigation ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navigation ul li a {
+  display: block;
+  margin: auto;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 959px) {
+  .container {
+    outline: solid 0px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .site {
+    display: grid;
+    grid-gap: 5px;
+  }
 }

@@ -11,12 +11,12 @@
 	// grid-template-rows: 80px repeat(3, 300px) 600px 80px;
 
 	grid-template-areas:
-	"head head head"
-	"nav nav nav"
-	"sec1 sec1 sec1"
-	"sec2 sec2 sec2"
-	"sec3 sec3 sec3"
-	"foot foot foot";
+	"head head head head head head"
+	"nav nav nav nav nav nav"
+	"sec1 sec1 sec1 sec1 sec1 sec1"
+	"sec2 sec2 sec2 sec2 sec2 sec2"
+	"sec3 sec3 sec3 sec3 sec3 sec3"
+	"foot foot foot foot foot foot";
 
 }
 .header{

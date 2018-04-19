@@ -719,7 +719,7 @@ header img {
 
 .site {
   display: grid;
-  grid-template-areas: "head head head" "nav nav nav" "sec1 sec1 sec1" "sec2 sec2 sec2" "sec3 sec3 sec3" "foot foot foot";
+  grid-template-areas: "head head head head head head" "nav nav nav nav nav nav" "sec1 sec1 sec1 sec1 sec1 sec1" "sec2 sec2 sec2 sec2 sec2 sec2" "sec3 sec3 sec3 sec3 sec3 sec3" "foot foot foot foot foot foot";
 }
 
 .header {

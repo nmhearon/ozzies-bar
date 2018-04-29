@@ -727,7 +727,8 @@ header img {
   grid-area: head;
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation {

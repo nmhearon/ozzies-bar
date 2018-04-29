@@ -19,11 +19,13 @@
 	"foot foot foot foot foot foot";
 
 }
+//Image here was stretching in chrome when using justify-content: space around.  When I utilized justify and align center it quickly remedied the issue.  TYBG.
 .header{
 	grid-area: head;
 	display: flex;
 	flex-flow: row;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
 }
 .navigation{
 	// grid-column: 1 / 4;

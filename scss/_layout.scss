@@ -13,8 +13,8 @@
 	grid-template-areas:
 	"head head head head head head"
 	"nav nav nav nav nav nav"
-	"sec1 sec1 sec1 sec1 sec1 sec1"
-	"sec2 sec2 sec2 sec2 sec2 sec2"
+	"sec1 sec1 sec1 sec1 sec1img sec1img"
+	"sec2img sec2img sec2 sec2 sec2 sec2"
 	"sec3 sec3 sec3 sec3 sec3 sec3"
 	"foot foot foot foot foot foot";
 
@@ -51,6 +51,9 @@
 		}//li
 	}//ul
 }//.nav
+.footer{
+	margin-top: 30px;
+}
 @media screen and (max-width: 959px){
 	.container{
 		outline: solid 0px;

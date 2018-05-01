@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans|Roboto");
 html {
   line-height: 1.15;
   /* 1 */
@@ -519,11 +520,21 @@ textarea {
 }
 
 html {
-  background: #8a0000;
+  background: black;
 }
 
 h1, h2, h3, body {
   color: white;
+}
+
+h2 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1.75em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
 }
 
 header {
@@ -541,6 +552,11 @@ header img {
 .navigation ul li a {
   color: white;
   font-family: Arial;
+}
+
+img {
+  max-width: 30%;
+  height: auto;
 }
 
 #currentpage li {
@@ -720,7 +736,7 @@ header img {
 
 .site {
   display: grid;
-  grid-template-areas: "head head head head head head" "nav nav nav nav nav nav" "sec1 sec1 sec1 sec1 sec1 sec1" "sec2 sec2 sec2 sec2 sec2 sec2" "sec3 sec3 sec3 sec3 sec3 sec3" "foot foot foot foot foot foot";
+  grid-template-areas: "head head head head head head" "nav nav nav nav nav nav" "sec1 sec1 sec1 sec1 sec1img sec1img" "sec2img sec2img sec2 sec2 sec2 sec2" "sec3 sec3 sec3 sec3 sec3 sec3" "foot foot foot foot foot foot";
 }
 
 .header {
@@ -753,6 +769,10 @@ header img {
   display: block;
   margin: auto;
   text-decoration: none;
+}
+
+.footer {
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 959px) {

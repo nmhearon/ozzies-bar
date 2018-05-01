@@ -1,11 +1,21 @@
 // @import 'icon/*.png';
 // @include all-icon-sprites;
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Roboto');
 
 html{
-  background: #8a0000;
+  //background: #8a0000; Ozzies original bg color
+  background: black;
 }
 h1,h2,h3,body{
   color: white;
+}
+h2{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1.75em;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
 }
 header{
   img{
@@ -25,6 +35,10 @@ header{
       }
     }
   }
+}
+img{
+  max-width: 30%;
+  height: auto;
 }
 #currentpage{
   li{

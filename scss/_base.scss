@@ -27,6 +27,9 @@ header{
 .navigation{
   ul{
     background: $navbgcolor;
+    #currentpage{
+      background: #8a0000;
+    }
     font-size: 1em;
     li{
       a{
@@ -37,12 +40,11 @@ header{
   }
 }
 img{
-  max-width: 30%;
+  max-width: 300px;
   height: auto;
 }
-#currentpage{
-  li{
-    background: white;
-    text: $navbgcolor;
+.sec1img{
+  img{
+      justify-items: left;
   }
 }

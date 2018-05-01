@@ -549,19 +549,21 @@ header img {
   background: #292929;
   font-size: 1em;
 }
+.navigation ul #currentpage {
+  background: #8a0000;
+}
 .navigation ul li a {
   color: white;
   font-family: Arial;
 }
 
 img {
-  max-width: 30%;
+  max-width: 300px;
   height: auto;
 }
 
-#currentpage li {
-  background: white;
-  text: #292929;
+.sec1img img {
+  justify-items: left;
 }
 
 /*
@@ -736,7 +738,7 @@ img {
 
 .site {
   display: grid;
-  grid-template-areas: "head head head head head head" "nav nav nav nav nav nav" "sec1 sec1 sec1 sec1 sec1img sec1img" "sec2img sec2img sec2 sec2 sec2 sec2" "sec3 sec3 sec3 sec3 sec3 sec3" "foot foot foot foot foot foot";
+  grid-template-areas: "head head head head head head" "nav nav nav nav nav nav" "sec1 sec1 sec1 sec1 sec1img sec1img" "sec2img sec2img sec2 sec2 sec2 sec2" "sec3 sec3 sec3 sec3 sec3img sec3img" "sec4img sec4img sec4 sec4 sec4 sec4" "foot foot foot foot foot foot";
 }
 
 .header {
@@ -769,6 +771,54 @@ img {
   display: block;
   margin: auto;
   text-decoration: none;
+}
+
+.sec1 {
+  grid-area: sec1;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sec1img {
+  grid-area: sec1img;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sec2 {
+  grid-area: sec2;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sec2img {
+  grid-area: sec2img;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sec3 {
+  grid-area: sec3;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sec3img {
+  grid-area: sec3img;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sec4 {
+  grid-area: sec4;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.sec4img {
+  grid-area: sec4img;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .footer {

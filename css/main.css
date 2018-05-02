@@ -833,6 +833,13 @@ img {
   grid-area: sec1;
 }
 
+.contactinfo {
+  grid-colum-start: 2;
+  grid-colum-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
 .mariners {
   grid-colum-start: 1;
   grid-colum-end: 2;

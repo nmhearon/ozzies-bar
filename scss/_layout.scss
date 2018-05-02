@@ -11,13 +11,13 @@
 	// grid-template-rows: 80px repeat(3, 300px) 600px 80px;
 
 	grid-template-areas:
-	"head head head head head head"
-	"nav nav nav nav nav nav"
-	"sec1 sec1 sec1 sec1 sec1img sec1img"
-	"sec2img sec2img sec2 sec2 sec2 sec2"
-	"sec3 sec3 sec3 sec3 sec3img sec3img"
-	"sec4img sec4img sec4 sec4 sec4 sec4"
-	"foot foot foot foot foot foot";
+	"head head head"
+	"nav nav nav"
+	"sec1 sec1 sec1img"
+	"sec2img sec2 sec2 "
+	"sec3 sec3 sec3img"
+	"sec4img sec4 sec4"
+	"foot foot foot";
 
 }
 //Image here was stretching in chrome when using justify-content: space around.  When I utilized justify and align center it quickly remedied the issue.  TYBG.
@@ -58,6 +58,7 @@
 	grid-area: sec1;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	padding: 5px;
 }
 .sec1img{
 	grid-area: sec1img;
@@ -68,6 +69,7 @@
 	grid-area: sec2;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	padding: 5px;
 }
 .sec2img{
 	grid-area: sec2img;
@@ -78,6 +80,7 @@
 	grid-area: sec3;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	padding: 5px;
 }
 .sec3img{
 	grid-area: sec3img;
@@ -88,6 +91,7 @@
 	grid-area: sec4;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	padding: 5px;
 }
 .sec4img{
 	grid-area: sec4img;
@@ -96,6 +100,23 @@
 }
 .footer{
 	margin-top: 30px;
+}
+.map{
+	grid-area: sec1;
+}
+.mariners{
+	grid-colum-start: 1;
+	grid-colum-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	justify-self: center;
+}
+.seahawks{
+	grid-colum-start: 2;
+	grid-colum-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	justify-self: center;
 }
 @media screen and (max-width: 959px){
 	.container{
